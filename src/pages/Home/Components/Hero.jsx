@@ -73,7 +73,7 @@ function Hero() {
 
           <div className="mt-8 mb-12 flex justify-center items-center w-full overflow-hidden">
             <h1 
-              className="text-5xl ss:text-8xl sm:text-9xl md:text-9xl font-bold font-inter text-white tracking-wider overflow-visible"
+              className="mb-10 text-5xl ss:text-8xl sm:text-9xl md:text-9xl font-bold font-inter text-white tracking-wider overflow-visible "
               style={{ letterSpacing: '0.05em', maxWidth: '100%', lineHeight: '1.1' }}
             >
               {scrambledText}
