@@ -37,12 +37,12 @@ const Header = () => {
   return (
     <>
       <header
-        className={`py-4 px-4 md:px-14 lg:px-28 w-full font-quicksand fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`py-4 px-4 md:px-6 lg:px-8 w-full font-quicksand fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled ? "backdrop-blur-sm" : "bg-transparent"
         }`}
       >
-        <div className="flex flex-row justify-start items-center container mx-auto">
-          {/* Logo (Now left-aligned & bigger) */}
+        <div className="flex flex-row items-center w-full">
+          {/* Logo (Left-aligned with minimum spacing) */}
           <Link to="/" className="group">
             <img 
               src="/common/Rang_E_Chinar-removebg-preview.png" 
@@ -98,6 +98,20 @@ const Header = () => {
 
       {/* Padding to prevent content from hiding under fixed header */}
       <div className="h-20 md:h-24"></div>
+      
+      {/* CSS to hide scrollbar */}
+      <style jsx>{`
+        body {
+          overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+          display: none;
+        }
+        * {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
     </>
   );
 };
