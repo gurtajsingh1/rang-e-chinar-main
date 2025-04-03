@@ -8,9 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#65ffa2',
-        'secondary': '#8fdaff',
-        'background' : '#fff'
+        'primary': '#d46216',
+        'secondary': '#e24b5d',
+        'background' : '#FDF7F2'
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
