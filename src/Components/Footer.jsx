@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer 
       style={{
-        backgroundImage: `url(/common/footer.png)`,
+        backgroundImage: `url(/common/backgrod.png)`,
         backgroundPosition: "center center"
       }} 
       className="bg-blend-overlay bg-cover bg-top h-72 relative text-white flex flex-col justify-center items-center font-playfair"
@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="container mx-auto text-center">
           <div className="relative z-10 mb-4 overflow-visible text-3xl md:text-5xl lg:text-8xl">
             <a href="/" className="text-5xl md:text-7xl font-neotriad lg:text-8xl font-bold">
-              Techvaganza
+              Rang-E-Chinar'25
             </a>
           </div>
 
@@ -25,13 +25,13 @@ const Footer = () => {
               href="mailto:techvaganza@nitsri.ac.in"
               className="text-md md:text-xl hover:text-secondary underline-animate relative inline-block font-kodeMono"
             >
-              techvaganza@nitsri.ac.in
+              rang-e-chinar.nitsri.ac.in/
             </a>
           </div>
 
           <div className="flex justify-center space-x-4 gap-x-5">
             <a
-              href="https://www.instagram.com/techvaganza.nitsri"
+              href="https://www.instagram.com/rang_e_chinar?igsh=MTd6dnBleXd2NGd3Yg=="
               target="_blank"
               rel="noopener noreferrer"
             >
