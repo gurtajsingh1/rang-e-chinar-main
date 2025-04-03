@@ -74,9 +74,9 @@ body{
 }
 
 .CardShadow{
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(83, 206, 134, 0.8);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(83, 206, 134, 0.8);
-    box-shadow: 0px 0px 20px 0px rgba(83, 206, 134, 0.8);
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(243, 167, 18, 0.8);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(243, 167, 18, 0.8);
+    box-shadow: 0px 0px 20px 0px rgba(243, 167, 18, 0.8);
 }
 
 .BoxShadow{
