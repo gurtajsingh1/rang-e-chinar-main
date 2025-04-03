@@ -5,12 +5,14 @@ import { day1Events, day2Events } from "../../../constants/eventDetails-final";
 const Tabview = ({ tab1, tab2 }) => {
   return (
     <Tabs>
-      <TabList className={"flex mx-1 md:gap-2 my-2 py-4 font-kodeMono"}>
+      {/* Tab Buttons */}
+      <TabList className="flex flex-wrap justify-end mr-6 md:mr-18 gap-6 my-6 font-kodeMono">
         <Tab
-          className={
-            "px-14 py-3 text-base font-medium text-gray-800 bg-white border-gray-800 focus:outline-none hover:bg-secondary hover:text-gray hover:border-primary text-center border-2 tab-button cursor-pointer"
-          }
-          selectedClassName="active-tab"
+          className="relative px-16 py-3 text-lg font-bold border-2 rounded-lg transition-all duration-300 cursor-pointer
+                     bg-[#F5E1C6] text-[#D97706] border-[#D97706]"
+          selectedClassName="!bg-[#D97706] !text-[#F5E1C6] !border-[#D97706] 
+                             !shadow-[0_0_15px_rgba(217,119,6,0.4)] 
+                             !scale-x-110"
         >
           {tab1}
         </Tab>
@@ -23,8 +25,10 @@ const Tabview = ({ tab1, tab2 }) => {
           {tab2}
         </Tab>
       </TabList>
-      <div className="BoxShadow mx-1 my-1 px-3 py-4 pb-12">
-        <TabPanel>
+
+      {/* Content Box */}
+      <div className="mx-2 my-1 px-4 py-6 pb-12 rounded-lg">
+        <TabPanel className="space-y-6">
           {day1Events.map((item, index) => (
             <ScheduleItem
               key={index}
@@ -33,11 +37,10 @@ const Tabview = ({ tab1, tab2 }) => {
               endTime={item["End Time"]}
               venue={item["Venue"]}
               exploreUrl={`/events/${item.url}`} 
-              // fullDay={item.fullDay} // If this field exists or modify based on your logic
             />
           ))}
         </TabPanel>
-        <TabPanel>
+        <TabPanel className="space-y-6">
           {day2Events.map((item, index) => (
             <ScheduleItem
               key={index}

@@ -49,7 +49,7 @@ const Header = () => {
           <Link to="/" className="flex items-center group">
             <img 
               src="" 
-              className="h-12 md:h-16 transition-transform duration-300 group-hover:scale-105" 
+              className="h-12 md:h-16 transition-transform duration-300 group-hover:scale-110" 
               alt="Logo" 
             />
           </Link>
@@ -60,28 +60,25 @@ const Header = () => {
               className="text-white text-2xl p-2 rounded-full bg-transparent border border-white/30 hover:border-white/60 transition-all duration-300" 
               onClick={toggleSidebar}
             >
-              {isSidebarOpen ? <FaTimes size={20} /> : <FaBars size={20} />}
+              {isSidebarOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
           </div>
 
-          <div className="hidden lg:flex font-semibold items-center md:space-x-6 lg:space-x-8">
+          <div className="hidden lg:flex font-semibold items-center md:space-x-6 lg:space-x-8 xl:space-x-10">
             <NavLink to="/" label="Home" />
             <NavLink to="/events" label="Events" />
-            
-            
-            
             <NavLink to="/schedule" label="Schedule" />
 
             <div className="relative">
               <button
-                className="text-white hover:text-white/80 flex items-center text-lg font-semibold"
+                className="text-white hover:text-white/80 flex items-center text-lg lg:text-xl xl:text-2xl font-semibold transition-all duration-300 font-quicksand"
                 onClick={() => toggleDropdown("resources")}
               >
                 Resources
                 <FaChevronDown
-                  className={`ml-1 transition-transform duration-200 ${
+                  className={`ml-2 transition-transform duration-200 ${
                     isResourceDropdownOpen ? "transform rotate-180" : ""
-                  } text-sm`}
+                  } text-sm lg:text-base`}
                 />
               </button>
               <ResourceDropdown
@@ -110,10 +107,10 @@ const Header = () => {
 const NavLink = ({ to, label }) => (
   <Link
     to={to}
-    className="text-white hover:text-white/80 text-lg font-semibold relative group"
+    className="text-white hover:text-white/80 text-lg lg:text-xl xl:text-2xl font-semibold relative group transition-all duration-300 font-quicksand"
   >
     {label}
-    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 group-hover:w-full transition-all duration-300"></span>
+    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white/60 group-hover:w-full transition-all duration-300 group-hover:shadow-glow"></span>
   </Link>
 );
 
