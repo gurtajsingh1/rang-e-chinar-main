@@ -17,7 +17,7 @@ const EventsPageLayoutWithTabs = ({ events, tabs }) => {
               {tabs.map((tab, index) => (
                 <Tab
                   key={index}
-                  className="px-8 py-3 text-base font-medium text-gray-800 bg-white border-gray-800 focus:outline-none hover:bg-gray-800 hover:text-primary hover:border-primary text-center border-2 tab-button cursor-pointer"
+                  className="px-8 py-3 text-base font-medium text-gray-800 bg-white border-gray-800 focus:outline-none hover:bg-secondary hover:text-black hover:border-primary text-center border-2 tab-button cursor-pointer"
                   selectedClassName="active-tab"
                 >
                   {tab}
