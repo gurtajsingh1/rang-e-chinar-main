@@ -6,7 +6,7 @@ const Tabview = ({ tab1, tab2 }) => {
   return (
     <Tabs>
       {/* Tab Buttons */}
-      <TabList className="flex flex-wrap justify-end mr-6 md:mr-18 gap-6 my-6 font-kodeMono">
+      <TabList className="flex flex-wrap justify-center gap-6 my-6 font-kodeMono">
         <Tab
           className="relative px-16 py-3 text-lg font-bold border-2 rounded-lg transition-all duration-300 cursor-pointer
                      bg-[#F5E1C6] text-[#D97706] border-[#D97706]"
