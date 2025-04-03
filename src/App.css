@@ -33,7 +33,8 @@ title{
 }
 
 body{
-    background: url("/common/background.png");
+    background: url("/common/background.png") no-repeat center center fixed;
+    background-size: cover;
     overflow-x: hidden;    
 }
 
