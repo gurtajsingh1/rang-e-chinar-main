@@ -86,12 +86,12 @@ function Hero() {
         <Header />
         <div className="pt-4 md:pt-32 p-7 md:p-32 text-white text-center">
           {/* Event Date */}
-          <div data-aos="fade-down" className="text-xl ss:text-2xl md:text-4xl font-quicksand text-green-50">
+          <div data-aos="fade-down" className="text-xl ss:text-2xl md:text-4xl font-quicksand text-green-50 overflow-hidden">
             2<sup className="text-xl md:text-2xl">nd</sup> & 3<sup className="text-xl md:text-2xl">rd</sup> May 2025
           </div>
 
           {/* Event Name */}
-          <p className="mt-5 text-4xl ss:text-7xl sm:text-8xl md:text-9xl font-bold font-inter text-green-50">
+          <p className="mt-5 text-4xl ss:text-7xl sm:text-8xl md:text-9xl font-bold font-inter text-green-50 overflow-hidden">
             {scrambledText}
           </p>
 

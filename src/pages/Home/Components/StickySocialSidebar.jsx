@@ -19,7 +19,7 @@ const StickySocialSidebar = () => {
         {/* Instagram Link */}
         <li className={`transform ${visible ? 'translate-x-0' : 'translate-x-full'} transition-all duration-500 delay-100`}>
           <a
-            href="https://www.instagram.com/techvaganza.nitsri/"
+            href="https://www.instagram.com/rang_e_chinar/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-l-lg border-2 border-green-300 hover:border-green-400 hover:pl-3 hover:w-20 transition-all duration-300 group shadow-lg hover:shadow-green-200/30"
@@ -33,7 +33,7 @@ const StickySocialSidebar = () => {
         {/* LinkedIn Link */}
         <li className={`transform ${visible ? 'translate-x-0' : 'translate-x-full'} transition-all duration-500 delay-200`}>
           <a
-            href="https://in.linkedin.com/company/techvaganza-nit-srinagar"
+            href="https://www.linkedin.com/company/rang-e-chinar/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white rounded-l-lg border-2 border-green-300 hover:border-green-400 hover:pl-3 hover:w-24 transition-all duration-300 group shadow-lg hover:shadow-green-200/30"
