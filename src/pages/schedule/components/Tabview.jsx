@@ -18,7 +18,7 @@ const Tabview = ({ tab1, tab2 }) => {
           {tab1}
         </Tab>
 
-        {/* Tab 2 (Fixed Border Issue) */}
+        {/* Tab 2 */}
         <Tab
           className="relative px-12 py-2 text-base font-semibold border-2 rounded-lg transition-all duration-300 cursor-pointer
           bg-[#F5E1C6] text-[#D97706] border-[#D97706] hover:bg-[#D97706] hover:text-[#F5E1C6] hover:border-[#D97706] font-playfair"

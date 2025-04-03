@@ -54,6 +54,7 @@ body {
 .ShadowBlur {
   transition: all 0.3s ease-in;
 }
+
 .ShadowBlur:hover {
   color: #F3A712;
   font-weight: bold;
@@ -74,7 +75,9 @@ body {
 }
 
 .BoxShadow {
-  box-shadow: 0px 0px 6px 0px rgba(83, 206, 134, 0.9);
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(255, 140, 0, 0.9); /* Dark Orange */
+  -moz-box-shadow: 0px 0px 6px 0px rgba(255, 140, 0, 0.9);
+  box-shadow: 0px 0px 6px 0px rgba(255, 140, 0, 0.9);
 }
 
 /* Tab button */
