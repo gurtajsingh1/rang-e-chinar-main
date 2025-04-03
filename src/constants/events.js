@@ -3,31 +3,31 @@ export const EventCategoryList = [
     id: 1,
     title: "Hello",
     url: "competitions",
-    img: "common/background.png",
+    img: "common/Autumns Golden Veil.jpeg",
   },
   {
     id: 2,
     title: "Talks and Workshops",
     url: "talks-and-workshops",
-    img: "common/background.png",
+    img: "common/Autumns Golden Veil.jpeg",
   },
   {
     id: 3,
     title: "Performances",
     url: "performances",
-    img: "common/background.png",
+    img: "common/Autumns Golden Veil.jpeg",
   },
   {
     id: 4,
     title: "Game Zone",
     url: "gaming-zone",
-    img: "common/background.png",
+    img: "common/Autumns Golden Veil.jpeg",
   },
   {
     id: 5,
     title: "Women In Tech",
     url: "women-in-tech",
-    img: "common/background.png",
+    img: "common/Autumns Golden Veil.jpeg",
   },
 ];
 
