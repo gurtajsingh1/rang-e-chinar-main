@@ -71,16 +71,16 @@ function Hero() {
             2<sup className="text-xl md:text-2xl">nd</sup> & 3<sup className="text-xl md:text-2xl">rd</sup> May 2025
           </div>
 
-          <div className="mt-8 mb-6 flex justify-center items-center w-full overflow-hidden">
+          <div className="mt-8 mb-12 flex justify-center items-center w-full overflow-hidden">
             <h1 
-              className="text-5xl ss:text-8xl sm:text-9xl md:text-10xl font-bold font-inter text-white tracking-wider whitespace-nowrap mx-auto"
-              style={{ letterSpacing: '0.05em' }}
+              className="text-5xl ss:text-8xl sm:text-9xl md:text-9xl font-bold font-inter text-white tracking-wider overflow-visible"
+              style={{ letterSpacing: '0.05em', maxWidth: '100%', lineHeight: '1.1' }}
             >
               {scrambledText}
             </h1>
           </div>
 
-          <p className="mt-6 text-2xl ss:text-3xl font-semibold text-white font-quicksand">
+          <p className="mt-8 text-2xl ss:text-3xl font-semibold text-white font-quicksand">
             Greener Innovations: Engineering a Sustainable World
           </p>
 
