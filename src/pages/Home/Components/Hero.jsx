@@ -91,7 +91,7 @@ function Hero() {
           </div>
 
           {/* Event Name */}
-          <p className="mt-5 text-5xl ss:text-7xl sm:text-8xl md:text-9xl font-bold font-inter text-green-50">
+          <p className="mt-5 text-4xl ss:text-7xl sm:text-8xl md:text-9xl font-bold font-inter text-green-50">
             {scrambledText}
           </p>
 
