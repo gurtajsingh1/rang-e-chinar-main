@@ -28,16 +28,23 @@ function Hero() {
   }, []);
 
   const [scrambledText, setScrambledText] = useState("Rang-E-Chinar");
-  const letters = "abcdefghijklmnopqrstuvwxyz";
+  const letters = "abcdefghijklmnopqrstuvwxyz-";
   const originalText = "Rang-E-Chinar";
 
   const scrambleText = useCallback(() => {
     let iteration = 0;
     const interval = setInterval(() => {
-      setScrambledText((prev) =>
-        prev
+      setScrambledText(
+        originalText
           .split("")
-          .map((letter, index) => (index < iteration ? originalText[index] : letters[Math.floor(Math.random() * 26)]))
+          .map((_, index) => {
+            // Make the entire text scrambled initially
+            if (index < iteration) {
+              return originalText[index];
+            }
+            // Include the hyphen character in possible random characters
+            return letters[Math.floor(Math.random() * letters.length)];
+          })
           .join("")
       );
       if (iteration >= originalText.length) clearInterval(interval);
@@ -78,30 +85,35 @@ function Hero() {
         )} */}
       </div>
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-green-900/60 via-green-600/30 to-green-400/10"></div>
+      {/* Subtle Transparent Overlay - Removed greenish tint */}
+      <div className="absolute inset-0 bg-black/20"></div>
 
       {/* Content */}
       <div className="relative z-10">
         <Header />
         <div className="pt-4 md:pt-32 p-7 md:p-32 text-white text-center">
           {/* Event Date */}
-          <div data-aos="fade-down" className="text-xl ss:text-2xl md:text-4xl font-quicksand text-green-50 overflow-hidden">
+          <div data-aos="fade-down" className="text-xl ss:text-2xl md:text-4xl font-quicksand text-white overflow-hidden">
             2<sup className="text-xl md:text-2xl">nd</sup> & 3<sup className="text-xl md:text-2xl">rd</sup> May 2025
           </div>
 
-          {/* Event Name */}
-          <p className="mt-5 text-4xl ss:text-7xl sm:text-8xl md:text-9xl font-bold font-inter text-green-50 overflow-hidden">
-            {scrambledText}
-          </p>
+          {/* Event Name - Modified for larger text and better centering */}
+          <div className="mt-8 mb-6 flex justify-center items-center w-full overflow-hidden">
+            <h1 
+              className="text-5xl ss:text-8xl sm:text-9xl md:text-10xl font-bold font-inter text-white tracking-wider whitespace-nowrap mx-auto"
+              style={{ letterSpacing: '0.05em' }}
+            >
+              {scrambledText}
+            </h1>
+          </div>
 
           {/* Event Tagline */}
-          <p className="mt-4 text-2xl ss:text-3xl font-semibold text-green-100 font-quicksand">
+          <p className="mt-6 text-2xl ss:text-3xl font-semibold text-white font-quicksand">
             Greener Innovations: Engineering a Sustainable World
           </p>
 
           {/* Countdown Timer */}
-          <div className="mt-8 md:mt-12 flex justify-center">
+          <div className="mt-10 md:mt-16 flex justify-center">
             <div className="w-full min-w-150 px-12 lg:px-40 flex flex-wrap gap-8 justify-between font-bold font-quicksand">
               {Object.entries(timeLeft).map(([unit, value], index) => (
                 <div 
@@ -110,10 +122,10 @@ function Hero() {
                   data-aos-delay={index * 100} 
                   className="text-center"
                 >
-                  <div className="block text-6xl md:text-9xl font-semibold text-green-100 font-playfair pb-3 md:pb-6">
+                  <div className="block text-6xl md:text-9xl font-semibold text-white font-playfair pb-3 md:pb-6">
                     {value}
                   </div>
-                  <div className="block text-lg md:text-3xl text-green-300 font-quicksand uppercase">
+                  <div className="block text-lg md:text-3xl text-white/80 font-quicksand uppercase">
                     {unit}
                   </div>
                 </div>
@@ -122,7 +134,7 @@ function Hero() {
           </div>
 
           {/* Register Button */}
-          <div className="mt-8 py-4 flex justify-center opacity-90">
+          <div className="mt-10 py-4 flex justify-center opacity-90">
             <Link 
               data-aos="fade-in" 
               data-aos-delay="500" 
