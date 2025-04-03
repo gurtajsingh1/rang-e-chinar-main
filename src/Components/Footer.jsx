@@ -3,41 +3,43 @@ import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer 
-      style={{
-        backgroundImage: `url(/common/backgrod.png)`,
-        backgroundPosition: "center center"
-      }} 
-      className="bg-blend-overlay bg-cover bg-top h-72 relative text-white flex flex-col justify-center items-center font-playfair"
+      className="h-72 relative text-white flex flex-col justify-center items-center font-playfair bg-[url('/common/backgrod.png')] bg-cover bg-center bg-no-repeat"
     >
-      {/* Overlay for reducing brightness of background image */}
-      <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
-
-      <div className="absolute h-auto left-0 right-0 z-10 flex flex-col justify-around items-center mt-4">
-        <div className="container mx-auto text-center">
-          <div className="relative z-10 mb-4 overflow-visible text-3xl md:text-5xl lg:text-8xl">
-            <a href="/" className="text-5xl md:text-7xl font-neotriad lg:text-8xl font-bold">
+      <div className="absolute inset-0 flex flex-col justify-center items-center">
+        <div className="text-center">
+          {/* Event Name */}
+          <div className="mb-4">
+            <a 
+              href="/" 
+              className="text-5xl md:text-7xl lg:text-8xl font-neotriad font-bold"
+              style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.3)" }}
+            >
               Rang-E-Chinar'25
             </a>
           </div>
 
+          {/* Website Link */}
           <div className="mb-4">
             <a
               href="mailto:techvaganza@nitsri.ac.in"
-              className="text-md md:text-xl hover:text-secondary underline-animate relative inline-block font-kodeMono"
+              className="text-md md:text-xl hover:text-secondary underline-animate font-kodeMono"
+              style={{ textShadow: "1px 1px 5px rgba(0, 0, 0, 0.2)" }}
             >
               rang-e-chinar.nitsri.ac.in/
             </a>
           </div>
 
-          <div className="flex justify-center space-x-4 gap-x-5">
+          {/* Social Media Icons */}
+          <div className="flex justify-center space-x-6">
             <a
-              href="https://www.instagram.com/rang_e_chinar?igsh=MTd6dnBleXd2NGd3Yg=="
+              href="https://www.instagram.com/rang_e_chinar/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaInstagram
-                size={24}
-                className="text-secondary hover:text-white transition duration-300"
+                size={28}
+                className="hover:text-secondary transition duration-300"
+                style={{ filter: "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3))" }}
               />
             </a>
             <a
@@ -46,18 +48,20 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaYoutube
-                size={24}
-                className="text-secondary hover:text-white transition duration-300"
+                size={28}
+                className="hover:text-secondary transition duration-300"
+                style={{ filter: "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3))" }}
               />
             </a>
             <a
-              href="https://www.linkedin.com/company/techvaganza-nit-srinagar/"
+              href="https://www.linkedin.com/company/rang-e-chinar/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin
-                size={24}
-                className="text-secondary hover:text-white transition duration-300"
+                size={28}
+                className="hover:text-secondary transition duration-300"
+                style={{ filter: "drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.3))" }}
               />
             </a>
           </div>

@@ -17,9 +17,8 @@ const Card = ({ event, index }) => {
 
   return (
     <div
-      className={`relative flex flex-col ${
-        index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
-      } items-center sm:space-x-6`}
+      className={`relative flex flex-col ${index % 2 === 0 ? "sm:flex-row" : "sm:flex-row-reverse"
+        } items-center sm:space-x-6`}
     >
       {/* Image section with spring frame */}
       <div
@@ -42,21 +41,20 @@ const Card = ({ event, index }) => {
 
       {/* Content section with spring styling */}
       <div
-        className={`w-full md:py-16 md:px-16 lg2:max-w-4xl relative ${
-          index % 2 === 0 ? 'sm:-translate-x-40' : 'sm:translate-x-40'
-        }`}
+        className={`w-full md:py-16 md:px-16 lg2:max-w-4xl relative ${index % 2 === 0 ? 'sm:-translate-x-40' : 'sm:translate-x-40'
+          }`}
       >
-        <div 
-          data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} 
-          className="p-6 spring-card-shadow md:p-8 lg:p-10 bg-green-50 h-full rounded-lg border-l border-t border-green-200"
+        <div
+          data-aos={index % 2 === 0 ? "fade-left" : "fade-right"}
+          className="p-6 spring-card-shadow md:p-8 lg:p-10 bg-amber-50 h-full rounded-lg border-l border-t border-amber-200"
         >
-          <div className="text-2xl font-figtree sm:text-3xl font-semibold mb-4 text-green-800 textShadow-sm overflow-visible spring-title">
+          <div className="text-2xl font-figtree sm:text-3xl font-semibold mb-4 text-amber-600 textShadow-sm overflow-visible spring-title">
             {event.title}
           </div>
-          <p className="mb-6 md:mb-8 text-green-700">{event.description}</p>
+          <p className="mb-6 md:mb-8 text-amber-600">{event.description}</p>
           <Link
             to={event.link}
-            className="px-3 md:px-6 py-3 spring-button-glow font-kodeMono text-sm md:text-base rounded-md font-medium text-white bg-green-600 hover:bg-green-700 border border-green-400 transition-all duration-300 text-center flex items-center justify-center gap-2"
+            className="px-3 md:px-6 py-3 spring-button-glow font-kodeMono text-sm md:text-base rounded-md font-medium text-white bg-amber-500 hover:bg-amber-600 border border-amber-400 transition-all duration-300 text-center flex items-center justify-center gap-2"
           >
             <span className="spring-leaf-icon"></span>
             EXPLORE

@@ -8,13 +8,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#65ffa2',
-        'secondary': '#8fdaff',
-        'background' : '#fff'
+        'primary': '#d46216',  // Main color
+        'secondary': '#e24b5d', // Another option
+        'background' : '#FDF7F2',
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
-        quicksand: ["Quicksand", "sans-serif"]
+        quicksand: ["Quicksand", "sans-serif"],
       }
     },
     screens: {
@@ -29,5 +29,18 @@ export default {
     },
   },
 
-  plugins: [],
+  plugins: [
+    function ({ addComponents, theme }) {
+      addComponents({
+        "::-moz-selection": {
+          backgroundColor: theme("colors.primary") + "33", // 20% opacity
+          color: "#ffffff",
+        },
+        "::selection": {
+          backgroundColor: theme("colors.primary") + "33", // 20% opacity
+          color: "#ffffff",
+        },
+      });
+    },
+  ],
 }

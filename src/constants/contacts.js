@@ -239,30 +239,30 @@ export const teams = {
       phone: "60057 56609"
     }
   ],
-  "Infrastructure Control": [
+  "Infrastructure Team": [
     {
       title: "Lead",
-      name: "Jatin",
+      name: "Adeeb Manzoor",
       email: "jatin_2021bmec067@nitsri.ac.in",
-      phone: "93927 88030"
+      phone: "7889730021"
     },
     {
       title: "Co-Lead",
-      name: "Yakshita",
+      name: "Nidhi",
       email: "2023nitsgr761@nitsri.ac.in",
-      phone: "98961 06793"
+      phone: "9352309148"
     },
     {
       title: "Co-Lead",
-      name: "Ayush",
+      name: "Atul Jaiswal",
       email: "ayush_2022bmme055@nitsri.ac.in",
-      phone: "8957026806"
+      phone: "6006410954"
     },
     {
       title: "Co-Lead",
-      name: "Siddhant Raghav",
+      name: "Mayank",
       email: "2023nitsge758@nitsri.ac.in",
-      phone: "7599741707"
+      phone: "6264595534"
     }
   ],
   "Logistics and Hospitality": [

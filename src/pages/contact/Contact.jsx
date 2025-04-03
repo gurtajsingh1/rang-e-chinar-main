@@ -12,14 +12,6 @@ export default function Contact() {
         { label: "Contact", path: "/contact" }
       ]}
     >
-      <div className="relative min-h-screen">
-        {/* Autumn lake-themed background overlay */}
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-teal-800 to-teal-900 opacity-80"></div>
-        
-        {/* Floating autumn leaves effect */}
-        <div className="absolute inset-0 -z-5 overflow-hidden">
-          <div className="leaf-container"></div>
-        </div>
         
         {/* Content container with autumn-themed styling */}
         <div className="relative z-10 pt-8 pb-16">
@@ -27,36 +19,6 @@ export default function Contact() {
             <Section key={teamKey} teamname={teamKey} teamMembers={teams[teamKey]} len={teams[teamKey].length} />
           ))}
         </div>
-      </div>
-      
-      {/* Custom CSS for autumn theme */}
-      <style jsx global>{`
-        body {
-          background-color: #1a3c4a;
-        }
-        
-        .leaf-container {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background: url('/autumn-leaves-overlay.png') repeat;
-          opacity: 0.7;
-          animation: drift 120s linear infinite;
-        }
-        
-        @keyframes drift {
-          from {
-            background-position: 0 0;
-          }
-          to {
-            background-position: 100% 100%;
-          }
-        }
-        
-        .textShadow-md {
-          text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-        }
-      `}</style>
     </PageLayout>
   );
 }
