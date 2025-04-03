@@ -17,11 +17,10 @@ const Tabview = ({ tab1, tab2 }) => {
           {tab1}
         </Tab>
         <Tab
-          className="relative px-16 py-3 text-lg font-bold border-2 rounded-lg transition-all duration-300 cursor-pointer
-                     bg-[#F5E1C6] text-[#D97706] border-[#D97706]"
-          selectedClassName="!bg-[#D97706] !text-[#F5E1C6] !border-[#D97706] 
-                             !shadow-[0_0_15px_rgba(217,119,6,0.4)] 
-                             !scale-x-110"
+          selectedClassName="active-tab"
+          className={
+            "px-14 py-3 text-base font-medium text-gray-800 bg-white border-gray-800 focus:outline-none hover:bg-secondary hover:text-gray hover:border-primary text-center border-2 tab-button cursor-pointer"
+          }
         >
           {tab2}
         </Tab>
