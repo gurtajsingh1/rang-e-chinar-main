@@ -59,7 +59,7 @@ function Hero() {
     <div className="relative min-h-screen overflow-hidden font-playfair">
       {/* Background Video or Fallback Image */}
       <div className="absolute inset-0 w-full h-full">
-        {!videoError ? (
+        {/* {!videoError ? (
           <video 
             autoPlay 
             loop 
@@ -68,14 +68,14 @@ function Hero() {
             className="absolute w-full h-full object-cover"
             onError={() => setVideoError(true)}
           >
-            <source src="public/common/videoplayback.mp4" type="video/mp4" />
+            <source src="" type="video/mp4" />
           </video>
         ) : (
           <div 
             className="w-full h-full bg-cover bg-center" 
             style={{ backgroundImage: "url('/spring-meadow.png')" }}
           ></div>
-        )}
+        )} */}
       </div>
 
       {/* Gradient Overlay */}
