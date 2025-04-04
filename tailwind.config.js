@@ -8,9 +8,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#d46216',  // Main color
-        'secondary': '#e24b5d', // Another option
-        'background' : '#FDF7F2',
+        'primary': '#FF9933',  // Deep saffron - traditional Kashmiri color
+        'secondary': '#C1272D', // Pomegranate red - matches Chinar leaves
+        'background': '#FFF9F5', // Warm off-white
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
