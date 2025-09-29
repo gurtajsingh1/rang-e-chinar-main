@@ -1,4 +1,5 @@
 export const competitions =[
+export const SingingEvents = [
   {
     "Event Name": "Eastern Solo Singing- “Grounded in roots, Alive with Rhythm”",
     "Description": "This theme embodies the deep connection between tradition and innovation in Eastern music and performance. In this eastern solo performance, this theme celebrates artists who carry forward the essence of their cultural origins while infusing it with new life and personal expression.",
